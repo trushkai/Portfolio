@@ -48,7 +48,7 @@ export default function Header() {
                     width: '100%',
                     display: 'flex',
                     alignItems: 'center',
-                    justifyContent: 'space-between',
+                    justifyContent: 'center',
                     px: { xs: 2, md: 0 }
                 }}>
                     {/* Logo */}
@@ -58,7 +58,8 @@ export default function Header() {
                             fontWeight: 700,
                             letterSpacing: '1px',
                             fontSize: 20,
-                            color: theme.palette.text.primary
+                            color: theme.palette.text.primary,
+                            marginRight: 30
                         }}>Trush</span>
                     </Box>
                     {/* Десктопное меню */}
