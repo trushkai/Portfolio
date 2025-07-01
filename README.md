@@ -1,69 +1,76 @@
-# React + TypeScript + Vite
+# 👩‍💻 Portfolio – Илона Труш
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Добро пожаловать в мой персональный сайт-портфолио!**
+Здесь вы найдёте примеры моих работ, информацию обо мне и навыках, а также удобную форму для связи.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Стек и технологии
 
-## Expanding the ESLint configuration
+- **React** – современный фронтенд, быстро и удобно
+- **MUI (Material UI)** – стильные и адаптивные компоненты
+- **Framer Motion** – плавная и дружелюбная анимация
+- **TypeScript** – строгая типизация (безопасный и масштабируемый код)
+- А также: адаптивная вёрстка, кастомные SVG-иконки, продуманный UI/UX
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 📱 Адаптивность и дизайн
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- Полная адаптация под все устройства: красиво и удобно на телефоне, планшете и десктопе
+- Светлая и тёмная тема, переключатель — на любой вкус
+- Анимация и "живой" интерфейс: всё двигается, светится и реагирует на действия
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🔗 Быстрый старт
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. **Клонируй репозиторий:**
+    ```bash
+    git clone https://github.com/trushkai/Portfolio.git
+    cd portfolio (если нужно)
+    ```
+2. **Установи зависимости:**
+    ```bash
+    npm install
+    ```
+3. **Запусти локально:**
+    ```bash
+    npm run dev
+    ```
+4. Открой [http://localhost:3000](http://localhost:3000) в браузере.
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+## 🛠️ Структура проекта
+
+- `src/pages/` — страницы (Обо мне, Навыки, Проекты, Контактная форма)
+- `src/components/` — Header, Footer, ThemeToggle и другие переиспользуемые блоки
+- `src/assets/` — изображения, SVG, иконки, фотографии
+- `src/theme.ts` — настройки темы и цветов
+
+---
+
+## 💡 Особенности
+
+- **Автоматически меняющееся фото** на главной странице (каждые 10 секунд)
+- Кастомные SVG-иконки соцсетей, адаптирующиеся к теме
+- Респонсивная сетка и карточки навыков
+- Красивая анимация (Framer Motion)
+- Минималистичный и современный стиль
+
+---
+
+## 📝 Лицензия
+
+MIT — используй как хочешь, но не забывай про автора :)
+
+---
+
+## 🤝 Связь
+
+Пиши в [Telegram](https://t.me/ttrushnaya) или через форму на сайте.
+
+---
+
+**Если тебе понравился проект — поставь ⭐️ и сделай fork!**
