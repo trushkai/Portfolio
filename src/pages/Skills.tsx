@@ -2,7 +2,6 @@ import { Box, Typography, useTheme, Grid } from '@mui/material';
 import { motion } from 'framer-motion';
 import React, { useState } from 'react';
 
-// Импорт всех svg
 import reactSvg from '../assets/skills/react.svg';
 import reactSvgWhite from '../assets/skills/react-white.svg';
 import tsSvg from '../assets/skills/typescript.svg';
@@ -25,16 +24,16 @@ import csharpSvg from '../assets/skills/csharp.svg';
 import csharpSvgWhite from '../assets/skills/csharp-white.svg';
 
 const skills = [
-  { title: "React",        icon: reactSvg,   iconWhite: reactSvgWhite },
-  { title: "TypeScript",   icon: tsSvg,      iconWhite: tsSvgWhite },
-  { title: "JavaScript",   icon: jsSvg,      iconWhite: jsSvgWhite },
-  { title: "HTML5",        icon: htmlSvg,    iconWhite: htmlSvgWhite },
-  { title: "CSS3",         icon: cssSvg,     iconWhite: cssSvgWhite },
-  { title: "MUI",          icon: muiSvg,     iconWhite: muiSvgWhite },
-  { title: "Figma",        icon: figmaSvg,   iconWhite: figmaSvgWhite },
-  { title: "Git",          icon: gitSvg,     iconWhite: gitSvgWhite },
-  { title: "SQL",          icon: sqlSvg,     iconWhite: sqlSvgWhite },
-  { title: "C#",           icon: csharpSvg,  iconWhite: csharpSvgWhite },
+  { title: "React", icon: reactSvg, iconWhite: reactSvgWhite },
+  { title: "TypeScript", icon: tsSvg, iconWhite: tsSvgWhite },
+  { title: "JavaScript", icon: jsSvg, iconWhite: jsSvgWhite },
+  { title: "HTML5", icon: htmlSvg, iconWhite: htmlSvgWhite },
+  { title: "CSS3", icon: cssSvg, iconWhite: cssSvgWhite },
+  { title: "MUI", icon: muiSvg, iconWhite: muiSvgWhite },
+  { title: "Figma", icon: figmaSvg, iconWhite: figmaSvgWhite },
+  { title: "Git", icon: gitSvg, iconWhite: gitSvgWhite },
+  { title: "SQL", icon: sqlSvg, iconWhite: sqlSvgWhite },
+  { title: "C#", icon: csharpSvg, iconWhite: csharpSvgWhite },
 ];
 
 export default function Skills() {
@@ -87,7 +86,6 @@ export default function Skills() {
   );
 }
 
-// Компонент карточки навыка
 function SkillCard({ icon, iconWhite, title, isDark, idx }: any) {
   const [hovered, setHovered] = useState(false);
 

@@ -1,4 +1,3 @@
-// src/components/Footer.tsx
 import { Box, Typography } from '@mui/material';
 import logo from '../assets/logo.svg';
 import logoWhite from '../assets/logo-white.svg';

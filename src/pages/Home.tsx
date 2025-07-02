@@ -22,7 +22,6 @@ export default function Home() {
     const isDark = theme.palette.mode === 'dark';
     const isMobile = useMediaQuery('(max-width:900px)');
 
-    // Фото: true - основное, false - второе
     const [mainPhoto, setMainPhoto] = useState(true);
 
     useEffect(() => {
@@ -30,12 +29,10 @@ export default function Home() {
         return () => clearInterval(interval);
     }, []);
 
-    // Показывать круглое или обычное фото и какую версию
     const photo = isMobile
         ? (mainPhoto ? myphotoCircle : myphoto2Circle)
         : (mainPhoto ? myphoto : myphoto2);
 
-    // Соцсети
     const tg = isDark ? tgIconWhite : tgIcon;
     const gh = isDark ? ghIconWhite : ghIcon;
     const google = isDark ? googleIconWhite : googleIcon;
@@ -75,7 +72,6 @@ export default function Home() {
                 flexDirection: { xs: 'column-reverse', md: 'row' }
             }}
         >
-            {/* Левая колонка: текст */}
             <Grid
                 item
                 xs={12}
@@ -221,7 +217,6 @@ export default function Home() {
                             mb: 1,
                         }}
                     >
-                        {/* Звёздочка SVG */}
                         <motion.svg
                             width="28"
                             height="28"
@@ -240,7 +235,6 @@ export default function Home() {
                         >
                             <path d="M10 15l-5.878 3.09 1.122-6.545L.487 6.91l6.564-.955L10 0l2.949 5.955 6.564.955-4.757 4.635 1.122 6.545z" />
                         </motion.svg>
-                        {/* Сам бейдж */}
                         <Box
                             sx={{
                                 bgcolor: theme.palette.mode === 'dark' ? '#223851' : '#f1fbff',
@@ -267,7 +261,6 @@ export default function Home() {
                     </Box>
                 </motion.div>
             </Grid>
-            {/* Правая колонка: фото */}
             <Grid
                 item
                 xs={12}

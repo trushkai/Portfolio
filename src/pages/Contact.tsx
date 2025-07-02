@@ -1,8 +1,7 @@
-// portfolio/src/pages/Contact.tsx
 import { Box, Button, Grid, TextField, Typography, Snackbar, useTheme } from "@mui/material";
 import { useState } from "react";
 import { motion } from "framer-motion";
-// Светлые и темные версии иконок
+
 import tg from '../assets/tg.svg';
 import tgWhite from '../assets/tg-white.svg';
 import vk from '../assets/vk.svg';
@@ -37,7 +36,6 @@ export default function Contact() {
             width: "100%",
         }}>
             <Grid container spacing={4} alignItems="center" justifyContent="center">
-                {/* Левая колонка — форма */}
                 <Grid item xs={12} md={6}>
                     <Box
                         component={motion.form}
@@ -147,7 +145,6 @@ export default function Contact() {
                             >
                                 Связаться
                             </Button>
-                            {/* Соцсети */}
                             <Box sx={{ display: "flex", gap: 2 }}>
                                 {socials.map((s, i) => (
                                     <a
@@ -186,7 +183,6 @@ export default function Contact() {
                     </Box>
                 </Grid>
 
-                {/* Правая колонка — текст и контакты */}
                 <Grid item xs={12} md={6}>
                     <Box
                         sx={{

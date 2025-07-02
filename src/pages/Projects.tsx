@@ -1,4 +1,3 @@
-// portfolio/src/pages/Experience.tsx
 import { Box, Typography, Link, useTheme } from '@mui/material';
 import { motion } from 'framer-motion';
 import logoSinodeep from '../assets/logoSinodeep.svg';
@@ -99,7 +98,6 @@ export default function Experience() {
                 overflow: "visible",
                 minHeight: 122,
                 transition: "border-color .14s cubic-bezier(.65,.04,.35,1), box-shadow .14s, background .18s",
-                // color-bordera через стили ниже (а не framer-motion)
                 "&:hover": {
                   borderColor: job.accent,
                   boxShadow: `0 0 0 2px ${job.accent}55`,
@@ -109,7 +107,6 @@ export default function Experience() {
                 }
               }}
             >
-              {/* Декоративная линия слева */}
               <Box sx={{
                 position: "absolute",
                 left: -14,
@@ -121,7 +118,6 @@ export default function Experience() {
                 bgcolor: job.accent,
                 opacity: 0.85,
               }} />
-              {/* Лого с акцентом */}
               <Box sx={{
                 width: 56, height: 56, minWidth: 56,
                 mr: 3.2,
@@ -138,7 +134,6 @@ export default function Experience() {
                   style={{ width: 38, height: 38, objectFit: "contain" }}
                 />
               </Box>
-              {/* Контент */}
               <Box sx={{ flexGrow: 1, minWidth: 0 }}>
                 <Typography
                   sx={{
@@ -179,7 +174,6 @@ export default function Experience() {
                   {job.linkText}
                 </Link>
               </Box>
-              {/* Дата */}
               <Typography
                 sx={{
                   fontSize: 15,

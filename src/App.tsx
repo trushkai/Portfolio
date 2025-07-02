@@ -1,4 +1,3 @@
-// portfolio/src/App.tsx
 import { useState } from 'react';
 import { ThemeProvider, CssBaseline, Box } from '@mui/material';
 import { getTheme } from './theme';
@@ -20,7 +19,7 @@ export default function App() {
       <CssBaseline />
       <Router>
         <Box sx={{
-          minHeight: '100vh', // обязательно!
+          minHeight: '100vh',
           display: 'flex',
           flexDirection: 'column',
           bgcolor: 'background.default'

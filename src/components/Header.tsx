@@ -1,5 +1,4 @@
-// src/components/Header.tsx
-import { AppBar, Toolbar, Button, Box, Stack, IconButton, Drawer, List, ListItem, ListItemButton, ListItemText } from '@mui/material';
+import { AppBar, Toolbar, Button, Box, Stack, IconButton, Drawer, ListItem, ListItemButton, ListItemText } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Link, useLocation } from 'react-router-dom';
 import resumeIcon from '../assets/resume-icon.svg';
@@ -51,7 +50,6 @@ export default function Header() {
                     justifyContent: 'center',
                     px: { xs: 2, md: 0 }
                 }}>
-                    {/* Logo */}
                     <Box sx={{ display: 'flex', alignItems: 'center' }}>
                         <img src={logoSrc} alt="logo" style={{ height: 32, marginRight: 12 }} />
                         <span style={{
@@ -62,7 +60,6 @@ export default function Header() {
                             marginRight: 30
                         }}>Trush</span>
                     </Box>
-                    {/* Десктопное меню */}
                     <Box
                         sx={{
                             display: { xs: 'none', md: 'flex' },
@@ -117,7 +114,6 @@ export default function Header() {
                             Резюме
                         </Button>
                     </Box>
-                    {/* Мобильное меню */}
                     <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
                         <IconButton
                             edge="end"

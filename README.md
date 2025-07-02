@@ -27,9 +27,10 @@
 
 1. **Клонируй репозиторий:**
     ```bash
-    git clone https://github.com/trushkai/Portfolio.git
-    cd portfolio (если нужно)
+    git clone https://github.com/trushkai/Portfolio.git .
     ```
+    ```bash
+    cd portfolio (если нужно)
 2. **Установи зависимости:**
     ```bash
     npm install
